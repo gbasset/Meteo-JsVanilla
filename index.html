@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteo</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-8">
+                <!-- Titre -->
+                <h1 class="text-center m-5 ">Météo</h1>
+
+                <!-- Ville / Temperature -->
+                <div class="card text-center mx-auto" style="width: 18rem;">
+
+                    <div class="card-body">
+                        <h2 class="card-title" id="ville">Card title</h2>
+                        <div id="temperature">
+                            <span id="temperature_label">
+                                xx.x
+                            </span> °C
+                        </div>
+
+                        <p class='text-left mt-1'>Ressenti :
+                            <span class="feel">
+                                0
+                            </span> </p>
+                        <p class='text-left mt-1'>Températue Minimale :
+                            <span class="min">
+                                0
+                            </span> </p>
+                        <p class='text-left mt-1'>Températue Maximale :
+                            <span class="max">
+                                0
+                            </span> </p>
+                        <p class='text-left mt-1'>Taux d'humidité :
+                            <span class="humid">
+                                0
+                            </span> </p>
+                        <p class='text-left mt-1'>Vitesse du vent:
+                            <span class="windV">
+                                0
+                            </span>
+                        </p>
+                        <p class='text-left mt-1'>Direction du vent:
+                            <span class="windD">
+                                0
+                            </span>
+                        </p>
+                        <form id="formulaire">
+                            <div class="row">
+                                <div class="col">
+                                    <input id="input" class="form-control" />
+                                </div>
+                        </form>
+                    </div>
+                    <button type="submit" id="changer" class="btn btn-primary mt-3">Chercher <i
+                            class="fas fa-search-dollar"></i></button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
